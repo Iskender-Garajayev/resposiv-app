@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -12,6 +12,9 @@
   height: 70px;
   border-bottom: 1px solid black;
   z-index: 100;
+  position: fixed;
+  background: #fff;
+  top: 0;
 }
 
 .inner-header {
@@ -47,6 +50,7 @@
   font-weight: bold;
   transition: 0.5s;
   text-transform: capitalize;
+  font-family: 'Dancing Script', cursive;
 }
 
 .navbar a:hover {
@@ -58,6 +62,7 @@
 .main {
   width: 100%;
   height: 600px;
+  margin-top: 50px;
 }
 
 .inner-main {
@@ -73,7 +78,7 @@
 .main-img {
   width: 800px;
   height: 500px;
-  margin-left: 300px;
+  margin-left: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,4 +88,77 @@
   width: 100%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+}
+
+.main-title {
+  display: flex;
+  width: 400px;
+  max-width: fit-content;
+  align-items: self-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-title h2 {
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
+.main-title p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.main-title .btn {
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  background-color: rgb(61, 57, 57);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-top: 50px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn:hover {
+  background-color: rgb(108, 108, 108);
+}
+
+.about {
+  width: 100%;
+  height: 350px;
+}
+
+.inner-about {
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.inner-about h2 {
+  font-size: 50px;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+
+.inner-about p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 50px;
 }
